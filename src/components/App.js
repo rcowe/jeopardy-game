@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Home from './Home';
+
 export default function App(props) {
 	const [name, updateName] = useState('Arthur');
 	return (
