@@ -1,4 +1,84 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700");
 @import "reset";
+@import "./scss/bootstrap";
 
 
+/* 
+Global
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightgray;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1;
+  color: yellow
+}
+
+
+h1 {
+  font-weight: 100;
+  font-size: 70px;
+  text-shadow: 2px 2px red;
+}
+
+/* 
+App Page
+*/
+
+.app-page {
+  margin-top: 5%;
+  height: 100%;
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+/* 
+Jeopardy Container
+*/
+
+.container {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+button{
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.score-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.question-btn {
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}

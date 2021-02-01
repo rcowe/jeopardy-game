@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import JeopardyHome from './JeopardyHome';
+
 // import axios from 'axios';
 
 export default function App(props) {
@@ -51,6 +52,7 @@ export default function App(props) {
 						currentQuestion={currentQuestion}
 						handleChange={handleChange}
 						handleSubmit={handleSubmit}
+						query={query}
 					/>
 				) : (
 					''
