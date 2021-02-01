@@ -3,12 +3,6 @@ import JeopardyHome from './JeopardyHome';
 // import axios from 'axios';
 
 export default function App(props) {
-	// const [query, updateQuery] = useState({
-	// 	baseURL: 'http://jservice.io/api/random',
-	// 	random: '',
-	// 	score: 0
-	// });
-
 	const [currentQuestion, updateQuestion] = useState({});
 	useEffect(() => {
 		(async () => {
@@ -22,9 +16,26 @@ export default function App(props) {
 		})();
 	}, []);
 
+	// const handleChange = event => {
+	// 	updateQuery({
+	// 		...query,
+	// 		...{
+	// 			[event.target.id]: event.target.value
+	// 		}
+	// 	});
+	// };
+
+	// const handleSubmit = event => {
+	// 	event.preventDefault();
+	// 	updateQuestion({
+	// 		...currentQuestion,
+
+	// 	})
+	// }
+
 	return (
 		<div className="Page-wrapper">
-			<h1>Jeopardy Trivia Game!</h1>
+			<h1>Welcome To The JeoParty!</h1>
 			<div>
 				{Object.keys(currentQuestion).length ? (
 					<JeopardyHome currentQuestion={currentQuestion} />
