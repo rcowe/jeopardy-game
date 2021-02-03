@@ -6,8 +6,7 @@ import JeopardyHome from './JeopardyHome';
 export default function App(props) {
 	const [query, updateQuery] = useState({
 		baseURL: 'http://jservice.io/api/random',
-		random: '',
-		curentScore: 0
+		random: ''
 	});
 	const [currentQuestion, updateQuestion] = useState({});
 
